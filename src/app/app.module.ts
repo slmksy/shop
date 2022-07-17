@@ -10,6 +10,9 @@ import { ProductComponent } from './product/product.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import {HttpClientModule} from "@angular/common/http";
+import { ProductAddForms1Component } from './product/product-add-forms1/product-add-forms1.component';
+import { ProductAddForms2Component } from './product/product-add-forms2/product-add-forms2.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { ToastrModule } from 'ngx-toastr';
     NavComponent,
     CategoryComponent,
     ProductComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    ProductAddForms1Component,
+    ProductAddForms2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot()
   ],
