@@ -26,5 +26,6 @@ export class AccountService {
   logOut(){
     localStorage.removeItem("isLogged")
     this.loggedIn =false
+    console.error("logout")
   }
 }
